@@ -2,6 +2,7 @@ import React from "react";
 import About from "./About";
 import Consultant from "./Consultant";
 import HeroBanner from "../Components/HeroBanner";
+import BannerSlider from "../Components/BannerSlider";
 
 export default function Home() {
   const services = [
@@ -26,6 +27,7 @@ export default function Home() {
   return (
     <main className="bg-white text-blue-900">
       {/* Hero Section */}
+      {/* <BannerSlider /> */}
       <HeroBanner />
 
       {/* Our Services Section */}
