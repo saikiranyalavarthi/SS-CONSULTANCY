@@ -3,24 +3,20 @@ import React from "react";
 export default function Services() {
   const services = [
     {
-      title: "Business Registration & Compliance",
-      desc: "End-to-end company setup, including U.K. business registration, HMRC compliance, and document preparation.",
+      title: "Digital Marketing",
+      desc: "Boost your visibility with SEO, Google Ads, and social media strategies to reach the right audience.",
     },
     {
-      title: "Visa & Immigration Consultancy",
-      desc: "Guidance for work, business, and dependent visas with professional document support and legal coordination.",
+      title: "App Development",
+      desc: "We build fast, secure iOS and Android apps using modern technologies.",
     },
     {
-      title: "Market Entry Advisory",
-      desc: "Helping foreign businesses establish presence in the U.K. with research, strategy, and expansion planning.",
+      title: "Website Development",
+      desc: "SEO-optimized websites built with Next.js and Tailwind CSS for speed and UX.",
     },
     {
-      title: "Information & Research Services",
-      desc: "Tailored business intelligence and information reports to support decision-making and investment strategies.",
-    },
-    {
-      title: "Financial & Tax Assistance",
-      desc: "Connecting clients with accounting, taxation, and audit partners for compliance and business optimization.",
+      title: "WordPress Development",
+      desc: "Custom themes and plugins for powerful, manageable WordPress websites.",
     },
   ];
 

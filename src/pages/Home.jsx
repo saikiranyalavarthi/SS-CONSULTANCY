@@ -1,6 +1,25 @@
 import React from "react";
 
 export default function Home() {
+  const services = [
+    {
+      title: "Digital Marketing",
+      desc: "Boost your visibility with SEO, Google Ads, and social media strategies to reach the right audience.",
+    },
+    {
+      title: "App Development",
+      desc: "We build fast, secure iOS and Android apps using modern technologies.",
+    },
+    {
+      title: "Website Development",
+      desc: "SEO-optimized websites built with Next.js and Tailwind CSS for speed and UX.",
+    },
+    {
+      title: "WordPress Development",
+      desc: "Custom themes and plugins for powerful, manageable WordPress websites.",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-white text-blue-900 flex flex-col items-center justify-center px-6">
       {/* Hero Section */}
@@ -30,36 +49,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Info Section */}
-      <section className="max-w-5xl mx-auto grid md:grid-cols-3 gap-6 py-16">
-        <div className="bg-blue-50 rounded-xl p-6 text-center shadow-lg hover:shadow-blue-300/50 transition">
-          <h3 className="text-xl font-bold text-blue-700 mb-2">
-            Company Details
-          </h3>
-          <p className="text-blue-800">
-            <strong>Company No:</strong> 14281616
-            <br />
-            <strong>Status:</strong> Active
-            <br />
-            <strong>Registered:</strong> 8 Aug 2022
-          </p>
-        </div>
-
-        <div className="bg-blue-50 rounded-xl p-6 text-center shadow-lg hover:shadow-blue-300/50 transition">
-          <h3 className="text-xl font-bold text-blue-700 mb-2">Our Mission</h3>
-          <p className="text-blue-800">
-            To deliver trusted and practical consultancy solutions that empower
-            businesses and individuals to succeed in the U.K. market.
-          </p>
-        </div>
-
-        <div className="bg-blue-50 rounded-xl p-6 text-center shadow-lg hover:shadow-blue-300/50 transition">
-          <h3 className="text-xl font-bold text-blue-700 mb-2">Our Location</h3>
-          <p className="text-blue-800">
-            144a Meanley Road,
-            <br />
-            London, England, E12 6AT
-          </p>
+      {/* Our Services Section */}
+      <section className="max-w-6xl mx-auto py-16 w-full">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-blue-800 mb-12">
+          Our Services
+        </h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-blue-50 rounded-xl p-6 shadow-md hover:shadow-blue-300/50 transition transform hover:-translate-y-1"
+            >
+              <h3 className="text-xl font-semibold text-blue-700 mb-2">
+                {service.title}
+              </h3>
+              <p className="text-blue-800 text-sm">{service.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
     </main>
