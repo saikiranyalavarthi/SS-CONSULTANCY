@@ -1,4 +1,6 @@
 import React from "react";
+import About from "./About";
+import Consultant from "./Consultant";
 
 export default function Home() {
   const services = [
@@ -68,6 +70,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <About />
+      <Consultant />
     </main>
   );
 }
