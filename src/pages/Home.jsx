@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./About";
 import Consultant from "./Consultant";
+import HeroBanner from "../Components/HeroBanner";
 
 export default function Home() {
   const services = [
@@ -23,36 +24,12 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-white text-blue-900 flex flex-col items-center justify-center px-6">
+    <main className="bg-white text-blue-900">
       {/* Hero Section */}
-      <section className="text-center py-20">
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-blue-800">
-          Welcome to SS CONSULTANCY (U.K) LTD
-        </h1>
-        <p className="max-w-2xl mx-auto text-blue-700 text-lg leading-relaxed">
-          We provide professional consultancy services for businesses and
-          individuals — from company registration to immigration guidance and
-          strategic planning.
-        </p>
-
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <a
-            href="/services"
-            className="bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition"
-          >
-            Explore Our Services
-          </a>
-          <a
-            href="/consultant"
-            className="border border-blue-700 text-blue-800 px-6 py-3 rounded-lg hover:bg-blue-700 hover:text-white transition"
-          >
-            Talk to a Consultant
-          </a>
-        </div>
-      </section>
+      <HeroBanner />
 
       {/* Our Services Section */}
-      <section className="max-w-6xl mx-auto py-16 w-full">
+      <section className="max-w-6xl mx-auto py-16 px-6 w-full">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-blue-800 mb-12">
           Our Services
         </h2>
@@ -70,7 +47,11 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* About Section */}
       <About />
+
+      {/* Consultant Section */}
       <Consultant />
     </main>
   );
